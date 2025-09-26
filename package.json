@@ -8,6 +8,9 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
+    "prisma:seed": "prisma db seed"
+    "vercel-build": "prisma generate && prisma migrate deploy && next build"
+    
   },
   "dependencies": {
     "lucide-react": "^0.344.0",
